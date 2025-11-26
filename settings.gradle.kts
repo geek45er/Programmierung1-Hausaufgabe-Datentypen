@@ -1,0 +1,1 @@
+rootProject.name = "Programmierung1-Hausaufgabe-Datentypen"
