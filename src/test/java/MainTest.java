@@ -1,6 +1,6 @@
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.*;
 
 class MainTest {
 
@@ -103,31 +103,31 @@ class MainTest {
     @Test
     void testPrimeNumber() {
         boolean result = Main.isPrime(7);
-        assertEquals(true, result, "Failed to identify 7 as a prime number.");
+        assertTrue(result, "Failed to identify 7 as a prime number.");
     }
 
     @Test
     void testNonPrimeNumber() {
         boolean result = Main.isPrime(10);
-        assertEquals(false, result, "Failed to identify 10 as a non-prime number.");
+        assertFalse(result, "Failed to identify 10 as a non-prime number.");
     }
 
     @Test
     void testOneIsNotPrime() {
         boolean result = Main.isPrime(1);
-        assertEquals(false, result, "Failed to identify 1 as a non-prime number.");
+        assertFalse(result, "Failed to identify 1 as a non-prime number.");
     }
 
     @Test
     void testZeroIsNotPrime() {
         boolean result = Main.isPrime(0);
-        assertEquals(false, result, "Failed to identify 0 as a non-prime number.");
+        assertFalse(result, "Failed to identify 0 as a non-prime number.");
     }
 
     @Test
     void testNegativeNumberIsNotPrime() {
         boolean result = Main.isPrime(-3);
-        assertEquals(false, result, "Failed to identify -3 as a non-prime number.");
+        assertFalse(result, "Failed to identify -3 as a non-prime number.");
     }
 
     @Test
